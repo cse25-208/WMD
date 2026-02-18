@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Nature Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<style type="text/css">
+
+
+body{
+ background-color: #3B3B3B;
+ color: #FFFFF0;
+ font-family: 'Playfair Display', serif;
+ padding: 0;
+ clear: left;
+ overflow-y: auto;
+ margin: 0;
+}
+  
+::-webkit-scrollbar{
+ width: 6px;
+}
+
+::-webkit-scrollbar-track{
+ background: #111;
+}
+ 
+::-webkit-scrollbar-thumb{
+ background: linear-gradient(#2e7d32, #81c784)
+}
+
+.bold-text{
+ font-weight: bold;
+ font-family: 'Georgia', serif;
+ font-size: 1.5em;
+ color: rgb(11,12,12);
+ background-color: #353839;
+ padding: 10px 5px 5px;
+ max-width: 450px;
+ margin: 50px auto;
+ border-radius: 6px;
+ transition: all 0.3s ease;
+ box-shadow:0 4px 6px rgba(0,0,0,0.1);
+ text-align: center;
+ display: block;
+
+}
+
+.bold-text:hover{
+ transform: translateY(-5px);
+ box-shadow: 0 12px 18px rgba(0,0,0,0.2);
+ backdrop-filter: blur(5px);
+ border-radius: 10px;
+ background-color: #16201A;
+ color: #EDEDED;
+}
+   
+
+.navbar{
+  display: flex;
+  justify-content: center;   
+  margin: 50px 0;
+  gap: 40px; 
+  clear: both;
+  
+}
+
+.navbar a.active{
+ background: #2F4F4F;
+ border-radius: 20px;
+ color: white;
+ 
+
+}
+ 
+.navbar a{
+  text-decoration: none;
+  color: #EDEDED;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: background color 0.3s, transform 0.5s;
+ 
+}
+
+.navbar a:hover {
+  background-color: #1E1E1E;
+  transform: translateY(-2px); 
+} 
+
+
+.top-gradient {
+ width: 100%;
+ height: 80px;
+ pointer-events: none;
+ background: linear-gradient(to right, #8C5E3C, #F2E2C4);
+ z-index: 10; 
+}
+
+
+.intro-text {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;  
+}
+
+
+.intro-text video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(1.5px);
+  transform: scale(1.05);
+  z-index: 0;   /* sits behind content*/
+ 
+}
+
+.intro-text .overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.3);
+  padding:10px 20px;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+ div.gallery {
+ column-count: 3;
+  column-gap: 20px;
+  padding: 20px;
+}
+
+div.gallery-item {
+  
+  position: relative;
+  margin: 5px;
+  width: 300px;
+  break-inside: avoid;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  overflow: hidden; 
+  cursor: pointer;
+  transition: transform 0.3s ease;
+ 
+}
+div.gallery-item:hover .desc {
+
+  opacity: 1;
+}
+
+div.gallery-item img {
+
+  width: 100%;
+  display: block;
+  transition: 0.4s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+ transform: translateY(-5px);
+ box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+}
+
+div.gallery-item div.desc {
+   
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+ padding: 10px;
+ text-align: center;
+ color: #E0F7FA; 
+ opacity: 0;
+ transition: opacity 0.4s ease;
+}
+
+</style>
+<body> 
+
+<div class="top-gradient"></div>
+
+
+<header> 
+<section>
+ <h1>Wonders of Botswana</h1>
+</section>
+</header>
+<main>
+<p class="bold-text"><em>"Look deep into nature, and then you will understand everything better." - Albert Einstein</em></p>
+</main>
+ 
+<div class="navbar">
+ <a href="index.html" class="active">Home</a>
+ <a href="animals.html">Animals</a>
+ <a href="plants.html">Plants</a>
+ <a href="attractions.html">Attractions</a>
+</div> 
+
+  <section class="intro-text">
+ 
+  <video autoplay muted loop playsinline>
+    <source src="Botswana.mp4" type="video/mp4">
+  </video>
+
+  <div class="overlay">
+    <h1>Discovering the timeless strength of Africa's greatest wetland.</h1>
+    <p>The pride of Botswana, Nature's paradise.</p>
+  </div>
+</section>
+
+ <section>
+<h2>Explore the beauty of the natural world</h2>
+
+</section>
+ <section class="Hub">
+<div class="gallery">
+<div class="gallery-item">
+ <a target="_blank" href="pexels-phio-sefako-13877935-30514678.jpg">
+   <img src="pexels-phio-sefako-13877935-30514678.jpg" alt="The Kazungula Brigde">
+</a>
+<div class="desc">The Kazungula Brigde</div>
+</div>
+</section>
+
+<section class="Hub">
+<div class="gallery">
+<div class="gallery-item">
+ <a target="_blank" href="baobab.jpg.webp">
+   <img src="baobab.jpg.webp" alt="Baobab Tree">
+</a>
+<div class="desc">The Baobab Tree</div>
+</div>
+</section>
+
+<section class="Hub">
+<div class="gallery">
+<div class="gallery-item">
+ <a target="_blank" href="pexels-clive-kim-2523249-7235405.jpg">
+   <img src="pexels-clive-kim-2523249-7235405.jpg" alt="Elephants">
+</a>
+<div class="desc">A parade of Elephants</div>
+</div>
+</section>
+
+<section class="Hub">
+<div class="gallery">
+<div class="gallery-item">
+ <a target="_blank" href="pexels-brandon-lerothodi-1441974-30205448 (1).jpg">
+   <img src="pexels-brandon-lerothodi-1441974-30205448 (1).jpg" alt="Three Dikgosi Monument">
+</a>
+<div class="desc">The Three Dikgosi Monument</div>
+</div>
+</section>
+
+<footer></footer>
+</body>
