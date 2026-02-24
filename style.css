@@ -206,3 +206,11 @@ div.gallery-item div.desc {
     font-size: 3em;
     margin-bottom: 20px;
 }
+ 
+.credit{
+    text-align: center;
+    font-size: 0.9em;
+    color: #cfd8dc;
+    margin-top: 10px;
+    font-style: italic;
+}
