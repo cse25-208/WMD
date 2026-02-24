@@ -136,13 +136,12 @@ body::-webkit-scrollbar{
 
 div.gallery-item {
   position: relative;
-  margin: 5px;
   break-inside: avoid;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   border-radius: 15px;
   overflow: hidden; 
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
  
 }
 
@@ -160,17 +159,17 @@ div.gallery-item img {
 
 .gallery-item img:hover {
   transform: scale(1.05);
- transform: translateY(-5px);
+ transform: translateY(-6px);
  box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
 }
 
 div.gallery-item div.desc {  
  position: absolute;
  bottom: 0;
- left: 0;
  width: 100%;
- padding: 10px;
+ padding: 12px;
  text-align: center;
+ background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
  color: #E0F7FA; 
  opacity: 0;
  transition: opacity 0.4s ease;
