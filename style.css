@@ -206,30 +206,9 @@ div.gallery-item div.desc {
     font-size: 3em;
     margin-bottom: 20px;
 }
- .hero-media{
-    text-align: center;
-    padding: 80px 20px;
-}
+ 
 
-.hero-image-card{
-    max-width: 800px;
-    margin: auto;
-    border-radius: 25px;
-    overflow: hidden;
-    background: rgba(255,255,255,0.04);
-    backdrop-filter: blur(10px);
-    padding-bottom: 20px;
-    transition: 0.4s ease;
-}
 
-.hero-image-card:hover{
-    transform: translateY(-6px);
-}
-
-.hero-image-card img{
-    width: 100%;
-    display: block;
-}
 
 .credit{
     text-align: center;
