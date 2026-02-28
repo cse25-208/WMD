@@ -234,11 +234,11 @@ div.gallery-item div.desc {
     position: absolute;
     bottom: 20px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0); 
     font-size: 2rem;
     color: white;
     text-decoration: none;
-    z-index: 2;
+    z-index: 3;
     animation: bounce 1.5s infinite;
 }
 
