@@ -9,7 +9,7 @@ body{
  font-family: 'Playfair Display', serif;
  padding: 0;
  clear: left;
- overflow-y: auto;
+ overflow-y: visible;
  margin: 0;
 }
   
