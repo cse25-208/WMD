@@ -231,6 +231,7 @@ div.gallery-item div.desc {
 /* Scroll Arrow */
 
 .scroll-down{
+    scroll-behavior: smooth;
     position: absolute;
     bottom: 20px;
     left: 50%;
