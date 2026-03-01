@@ -119,21 +119,21 @@ body{
 .hero-slider{
     position: relative;
     width: 100%;
-    height: 380px;
+    height: 300px;
     overflow: hidden;
 }
 
 .hero-slider .slide{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+    
 }
 
 .hero-slider .slide.active{
-    display: block;
+    opacity: 1;
+    z-index: 2;
 }
 
 .hero-slider img{

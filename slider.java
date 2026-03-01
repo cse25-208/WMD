@@ -1,15 +1,12 @@
 const slides = document.querySelectorAll(".hero-slider .slide");
-let index = 0;
 
-function showSlide(n){
-    slides.forEach(slide => slide.classList.remove("active"));
-    slides[n].classList.add("active");
-}
+let current = 0;
 
-function nextSlide(){
-    index = (index + 1) % slides.length;
-    showSlide(index);
-}
+setInterval(()=>{
+    slides[current].classList.remove("active");
 
-showSlide(0);
-setInterval(nextSlide, 5000);
+    current = (current + 1) % slides.length;
+
+    slides[current].classList.add("active");
+
+}, 5000);
