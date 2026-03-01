@@ -144,32 +144,7 @@ body{
     border-radius: 20px;
 }
  
-/* Match delays */
-.slide:nth-child(1) { animation-delay: 0s; }
-.slide:nth-child(1) .caption { animation-delay: 0s; }
 
-.slide:nth-child(2) { animation-delay: 4s; }
-.slide:nth-child(2) .caption { animation-delay: 4s; }
-
-.slide:nth-child(3) { animation-delay: 8s; }
-.slide:nth-child(3) .caption { animation-delay: 8s; }
-
-
-@keyframes fade {
-    0% { opacity: 0; }
-    5% { opacity: 1; }
-    25% { opacity: 1; }
-    30% { opacity: 0; }
-    100% { opacity: 0; }
-}
-
-@keyframes fadeText {
-    0% { opacity: 0; transform: translate(-50%, 20px); }
-    5% { opacity: 1; transform: translate(-50%, 0); }
-    25% { opacity: 1; }
-    30% { opacity: 0; }
-    100% { opacity: 0; }
-}
 
 .about-section{
     max-width: 900px;
