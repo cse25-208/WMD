@@ -118,15 +118,15 @@ body{
 
 
  div.gallery {
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  max-width: 1100px;
+  column-count: 3;
+ column-gap: 25px;
+  max-width: 1000px;
   margin: auto;
-  padding: 20px;
+  
 }
 
 div.gallery-item {
+  break-inside: avoid;
   position: relative;
   margin-bottom: 25px;
   border-radius: 15px;
@@ -142,9 +142,10 @@ div.gallery-item:hover .desc {
 
 div.gallery-item img {
   width: 100%;
-  height: 180px;
+  height: auto;
   display: block;
   object-fit: cover;
+  border-radius: 15px;
   transition: 0.4s ease;
 }
 
