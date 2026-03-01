@@ -116,38 +116,34 @@ body{
   pointer-events: none;
 }
 
-
- .hero-slider{
-  position: absolute;
-  width: 90%;
-  height: 100vh; 
-  max-height: 500px;
-  border-radius: 20px;
-  overflow: hidden;
-  margin: 40px auto;
-  opacity: 0;
-  animation: fade 16s infinite;
+.slider-container{
+    overflow-x: auto;
+    padding: 40px 0;
+    scroll-behavior: smooth;
 }
 
-.slide img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+.slider-track{
+    display: flex;
+    gap: 20px;
+    padding: 0 40px;
+    width: max-content;
 }
 
-/* Caption */
-.caption{
-  position: absolute;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  text-align: center;
-  opacity: 0;
-  animation: fadeText 16s infinite;
-
+.slider-card{
+    min-width: 280px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
+.slider-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+ 
 /* Match delays */
 .slide:nth-child(1) { animation-delay: 0s; }
 .slide:nth-child(1) .caption { animation-delay: 0s; }
