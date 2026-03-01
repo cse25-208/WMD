@@ -123,39 +123,24 @@ body{
     overflow: hidden;
 }
 
-.slide{
+.hero-slider .slide{
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
-    transform: scale(1.1);
-    transition: opacity 1.2s ease, transform 6s linear;
+    display: none;
 }
 
-.slide img{
+.hero-slider .slide.active{
+    display: block;
+}
+
+.hero-slider img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
-/* Text overlay */
-.overlay-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 42px;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* Active slide */
-.slide.active{
-    opacity: 1;
-    transform: scale(1);
-}
-
 
 .about-section{
     max-width: 900px;
