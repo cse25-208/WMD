@@ -116,34 +116,45 @@ body{
   pointer-events: none;
 }
 
-.slider-container{
-    overflow-x: auto;
-    padding: 40px 0;
-    scroll-behavior: smooth;
-}
-
-
-.slider-track{
-    display: flex;
-    gap: 20px;
-    padding: 0 40px;
-    width: max-content;
-}
-
-.slider-card{
-    min-width: 280px;
-    border-radius: 20px;
+.hero-slider{
+    position: relative;
+    width: 100%;
+    height: 420px;
     overflow: hidden;
 }
 
-.slider-card img{
+.slide{
+    position: absolute;
     width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-    border-radius: 20px;
+    height: 100%;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity 1.2s ease, transform 6s linear;
 }
- 
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text overlay */
+.overlay-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Active slide */
+.slide.active{
+    opacity: 1;
+    transform: scale(1);
+}
 
 
 .about-section{
