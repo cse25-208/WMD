@@ -128,27 +128,7 @@ body{
     animation: slideLoop 20s linear infinite;
 }
 
-.carousel-card{
-    width: 260px;
-    height: 180px;
-    border-radius: 20px;
-    object-fit: cover;
-    flex-shrink: 0;
-}
 
-.carousel-desc {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.6);
-    color: white;
-    padding: 8px;
-    font-size: 14px;
-    text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
 
 .carousel-item {
     position: relative;
