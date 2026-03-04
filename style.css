@@ -1,6 +1,3 @@
-html{
-   scroll-behavior: smooth;
-}
 
 
 body{
@@ -101,6 +98,7 @@ body{
   z-index: 0;   /* sits behind content*/
  
 }
+
 
 .intro-text .overlay {
   position: absolute;
