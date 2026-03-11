@@ -223,5 +223,16 @@ body{
 }
  
 
-
+.hero-delta{
+    height: 90vh;
+    background: url();
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
 
