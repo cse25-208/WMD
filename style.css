@@ -253,3 +253,14 @@ body{
     font-size: 18px;
     line-height: 1.6;
 }
+
+.story-link {
+    color: #f47c20;      /* safari/orange highlight */
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.story-link:hover {
+    color: #d35b00;      /* darker on hover */
+}
