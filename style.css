@@ -269,15 +269,15 @@ body{
 
 .more-info-safaris {
 
- color: #2e7d32;
+ color: #A77E55;
   text-decoration: none;
   font-weight: 500;
-  border-bottom: 2px solid #2e7d32;
+  border-bottom: 2px solid #A77E55;
   transition: all 0.3s ease;
 }
 
 /* Hover effect */
 .more-info-safaris:hover {
-  color: #1b5e20;
-  border-bottom: 2px solid #1b5e20;
+  color: #70401B;
+  border-bottom: 2px solid #70401B;
 }
