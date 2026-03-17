@@ -203,7 +203,7 @@ body{
 
 .hero-delta{
     height: 90vh;
-    background: url(images/Okavango.jpg);
+    background: url("images/Okavango.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
