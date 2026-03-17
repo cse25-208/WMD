@@ -256,7 +256,7 @@ body{
 
 .content{
 
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.7;
   color: #333;
   max-width: 700px;
@@ -277,7 +277,7 @@ body{
 }
 
 /* Hover effect */
-.more-info-safari:hover {
+.more-info-safaris:hover {
   color: #1b5e20;
   border-bottom: 2px solid #1b5e20;
 }
