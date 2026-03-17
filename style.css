@@ -5,7 +5,6 @@ body{
  color: #CEC2B2;
  font-family: 'Playfair Display', serif;
  padding: 0;
- clear: left;
  overflow-y: visible;
  margin: 0;
 }
@@ -285,8 +284,8 @@ body{
   background: #f9f9f9;
   border-radius: 12px;
   overflow: hidden;
-  flex: 1 1 250px; /* flex-grow, flex-shrink, base width */
-  max-width: 300px; /* optional max */
+  flex: 0 1 calc(33.333% - 20px); /* flex-grow, flex-shrink, base width */
+  max-width: calc(33.333%); 
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
