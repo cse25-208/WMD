@@ -253,3 +253,20 @@ body{
 .story-link:hover {
     color: #d35b00;      /* darker on hover */
 }
+
+.more-info-safaris {
+
+background-color: #2e7d32;   /* safari green */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+
+.more-info-safari:hover {
+  background-color: #1b5e20;
+  transform: scale(1.05);
+}
