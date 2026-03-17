@@ -164,7 +164,7 @@ body{
     position: relative;
     height: 70vh; /* Only top portion */
     overflow: hidden;
-    background: url(images\andy-robson-dGzS-rpIEXo-unsplash (1).jpg);
+    background: url("images\andy-robson-dGzS-rpIEXo-unsplash (1).jpg");
     background-size: cover;
     background-position: center;
     display: flex;
