@@ -266,7 +266,7 @@ background-color: #2e7d32;   /* safari green */
   transition: all 0.3s ease;
 }
 
-.more-info-safari:hover {
+.more-info-safaris:hover {
   background-color: #1b5e20;
   transform: scale(1.05);
 }
