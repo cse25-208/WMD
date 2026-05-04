@@ -460,6 +460,17 @@ flex-wrap: wrap;
 
 }
 
+.overlay {
+
+position: absolute;
+bottom: 0;
+width: 100%;
+padding: 20px;
+background: rgba(0, 0, 0, 0.6);
+color: white;
+
+}
+
 
 
 
