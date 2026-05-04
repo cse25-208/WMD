@@ -419,6 +419,9 @@ body{
   padding: 80px 8%;
   background: linear-gradient(to bottom, #1A1A2E, #0D1B2A);
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 /* TEXT TOP */
