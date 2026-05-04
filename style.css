@@ -417,25 +417,20 @@ body{
 
 .Delta-activities{
   padding: 80px 8%;
-  background: linear-gradient(
-    to bottom,
-    #1A1A2E,
-    #0D1B2A
-);
-
+  background: linear-gradient(to bottom, #1A1A2E, #0D1B2A);
   font-family: Arial, sans-serif;
 }
 
 /* TOP TEXT */
 .Delta-activities .left h5{
   font-size: 42px;
-  color: #1f3b2d;
+  color: #fff;
   margin-bottom: 20px;
 }
 
 .Delta-activities .right p{
   max-width: 750px;
-  color: #555;
+  color: #d1d1d1;
   line-height: 1.8;
   margin-bottom: 50px;
 }
@@ -443,17 +438,17 @@ body{
 /* GRID */
 .delta-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
 }
 
 /* CARD */
- .delta-card{
+.delta-card{
   position: relative;
   height: 500px;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
 
 /* IMAGE */
@@ -469,48 +464,48 @@ body{
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0,0,0,0.85),
-    rgba(0,0,0,0.15)
-  );
+  background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.1));
   z-index: 1;
 }
 
-/* CONTENT */
+/* TEXT AREA */
 .overlay{
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 30px;
+  padding: 25px;
   z-index: 2;
-  color: white;
-  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
+/* TEXT */
 .overlay h4{
-  font-size: 28px;
-  margin-bottom: 12px;
+  color: white;
+  font-size: 24px;
+  margin: 0;
 }
 
 .overlay p{
-  font-size: 15px;
-  line-height: 1.7;
-  margin-bottom: 20px;
-  color: #eee;
+  color: #eaeaea;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* BUTTON */
 .activities-more-info{
   display: inline-block;
-  padding: 12px 22px;
+  padding: 10px 18px;
   background: #c89b3c;
   color: white;
   text-decoration: none;
-  border-radius: 30px;
-  font-size: 14px;
-  transition: 0.3s ease;
+  border-radius: 25px;
+  font-size: 13px;
+  width: fit-content;
+  transition: 0.3s;
 }
 
 .activities-more-info:hover{
@@ -521,11 +516,11 @@ body{
 /* HOVER EFFECT */
 .delta-card:hover img{
   transform: scale(1.08);
+  transition: 0.5s ease;
 }
 
 /* MOBILE */
 @media(max-width:768px){
-
   .Delta-activities .left h5{
     font-size: 32px;
   }
@@ -533,12 +528,7 @@ body{
   .delta-card{
     height: 420px;
   }
-
-  .overlay{
-    padding: 22px;
-  }
 }
-
 
 
 
