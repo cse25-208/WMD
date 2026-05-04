@@ -416,19 +416,23 @@ body{
 
 
 .Delta-activities{
-background: linear-gradient(
-    to bottom,
-    #1A1A2E,
-    #0D1B2A
-);
-padding: 80px 40px;
-color: #9DB4C0;
-margin-bottom: 40px;
+  padding: 80px 8%;
+  background: #f5f2eb;
+  font-family: Arial, sans-serif;
 }
 
-.activities-more-info{
- color: #CEC2B2;
+/* TOP TEXT */
+.Delta-activities .left h5{
+  font-size: 42px;
+  color: #1f3b2d;
+  margin-bottom: 20px;
+}
 
+.Delta-activities .right p{
+  max-width: 750px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 50px;
 }
 
 /* GRID */
