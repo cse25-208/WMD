@@ -431,44 +431,104 @@ margin-bottom: 40px;
 
 }
 
-.delta-card {
-  width: 300px;
-  height: 400px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-
+/* GRID */
+.delta-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  gap: 30px;
 }
 
-.delta-card img {
+/* CARD */
+.delta-card{
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  height: 500px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+.delta-card img{
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s ease;
-
+  transition: transform 0.5s ease;
 }
 
-.delta-card:hover img {
-  transform: scale(1.05);
+/* DARK OVERLAY */
+.delta-card::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.15)
+  );
+  z-index: 1;
 }
 
-.delta-grid {
-display: flex;
-gap: 20px;
-flex-wrap: wrap;
-
+/* CONTENT */
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  z-index: 2;
+  color: white;
 }
 
-.overlay {
+.overlay h4{
+  font-size: 28px;
+  margin-bottom: 12px;
+}
 
-position: absolute;
-bottom: 0;
-width: 100%;
-padding: 20px;
-background: rgba(0, 0, 0, 0.6);
-color: white;
+.overlay p{
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #eee;
+}
 
+/* BUTTON */
+.activities-more-info{
+  display: inline-block;
+  padding: 12px 22px;
+  background: #c89b3c;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.activities-more-info:hover{
+  background: #e0b14a;
+  transform: translateY(-2px);
+}
+
+/* HOVER EFFECT */
+.delta-card:hover img{
+  transform: scale(1.08);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .Delta-activities .left h5{
+    font-size: 32px;
+  }
+
+  .delta-card{
+    height: 420px;
+  }
+
+  .overlay{
+    padding: 22px;
+  }
 }
 
 
