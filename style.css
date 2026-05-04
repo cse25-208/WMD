@@ -488,6 +488,7 @@ body{
   padding: 30px;
   z-index: 2;
   color: white;
+  background: red;
 }
 
 .overlay h4{
