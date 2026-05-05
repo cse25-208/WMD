@@ -46,42 +46,51 @@ body{
 }
 
 
+.site-header {
+  text-align: center;
+}
 
-.navbar{
+
+.logo-container {
+  padding: 15px 0;
+}
+
+.logo {
+  height: 80px;   
+  width: auto;
+}
+
+
+.navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;   
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   padding: 10px 20px;
-  
+  flex-wrap: wrap;
 }
 
-.logo{
- height: 45px;
- width: auto;
-
-}
-
-.nav-links a.active{
- background: #2F4F4F;
- border-radius: 20px;
- color: white;
- 
-
-}
- 
-.nav-links a{
+/* Links */
+.navbar a {
   margin: 0 10px;
   text-decoration: none;
   color: #EDEDED;
+  padding: 10px 20px;
   border-radius: 20px;
-  transition: background-color 0.3s, transform 0.5s;
- 
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.nav-links a:hover {
+/* Active link */
+.navbar a.active {
+  background: #2F4F4F;
+  color: white;
+}
+
+/* Hover effect */
+.navbar a:hover {
   background-color: #1E1E1E;
-  transform: translateY(-2px); 
-} 
+  transform: translateY(-2px);
+}
 
 .section-title{
     text-align: center;
