@@ -522,6 +522,24 @@ body{
   background: #e0b14a;
 }
 
+
+.featured-camps{
+  background: linear-gradient(to bottom, #08121f, #10243b);
+}
+
+.card img{
+  height: 250px;
+  object-fit: cover;
+}
+
+.card{
+  transition: 0.4s ease;
+}
+
+.card:hover{
+  transform: translateY(-10px);
+}
+
 .footer {
   position: relative;
   background-color: #0d1b2a; /* deep safari blue */
