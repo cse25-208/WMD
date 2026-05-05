@@ -45,11 +45,10 @@ body{
 
 }
 
-.logo img {
-  height: 60px;
-  width: auto;
+.logo {
+  height: 50px;   
+ width: auto;    
 }
-
 
 .navbar{
   display: flex;
