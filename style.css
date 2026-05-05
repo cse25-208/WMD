@@ -45,10 +45,7 @@ body{
 
 }
 
-.logo {
-  height: 50px;   
- width: auto;    
-}
+
 
 .navbar{
   display: flex;
@@ -59,7 +56,13 @@ body{
   
 }
 
-.navbar a.active{
+.logo{
+ height: 45px;
+ width: auto;
+
+}
+
+.nav-links a.active{
  background: #2F4F4F;
  border-radius: 20px;
  color: white;
@@ -67,7 +70,7 @@ body{
 
 }
  
-.navbar a{
+.nav-links a{
   text-decoration: none;
   color: #EDEDED;
   padding: 10px 20px;
@@ -76,7 +79,7 @@ body{
  
 }
 
-.navbar a:hover {
+.nav-links a:hover {
   background-color: #1E1E1E;
   transform: translateY(-2px); 
 } 
