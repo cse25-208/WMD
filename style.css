@@ -45,51 +45,50 @@ body{
 
 }
 
-
 .site-header {
+  background: #0d1b1a; /* deep safari green */
+  padding: 25px 0;
   text-align: center;
 }
 
-
+/* logo centered like luxury lodge branding */
 .logo-container {
-  padding: 15px 0;
+  margin-bottom: 15px;
 }
 
 .logo {
-  height: 80px;   
+  height: 80px;
   width: auto;
+  object-fit: contain;
 }
 
-
+/* navbar clean luxury style */
 .navbar {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 20px;
+  gap: 25px;
   flex-wrap: wrap;
 }
 
-/* Links */
+/* links */
 .navbar a {
-  margin: 0 10px;
+  color: #f5f5f5;
   text-decoration: none;
-  color: #EDEDED;
-  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 8px 12px;
   border-radius: 20px;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: 0.3s ease;
 }
 
-/* Active link */
-.navbar a.active {
-  background: #2F4F4F;
-  color: white;
-}
-
-/* Hover effect */
+/* hover = subtle luxury glow */
 .navbar a:hover {
-  background-color: #1E1E1E;
-  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* active link = safari gold accent */
+.navbar a.active {
+  border-bottom: 1px solid #c8b98b;
 }
 
 .section-title{
