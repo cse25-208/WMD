@@ -127,6 +127,8 @@ body{
   height: 300px;
   object-fit: cover;
   display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* overlay fix */
