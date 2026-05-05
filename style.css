@@ -522,7 +522,7 @@ body{
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   background-color: #0d1b2a; /* deep safari blue */
   color: #fff;
   padding: 10px 30px 20px;
