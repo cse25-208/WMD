@@ -671,11 +671,12 @@ body{
 
   /* NAVBAR */
 
-  .navbar{
-    flex-direction: column;
-    align-items: center;
+    .navbar{
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
-  }
+}
 
   .navbar a{
     font-size: 13px;
@@ -768,10 +769,12 @@ body{
   /* FOOTER */
 
   .footer-links,
-  .footer-external{
-    flex-direction: column;
+.footer-external{
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
-  }
+}
 
 }
 
