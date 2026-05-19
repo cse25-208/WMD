@@ -630,3 +630,174 @@ body{
   font-size: 13px;
   color: #888;
 }
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media (max-width: 992px){
+
+  .hero-delta h2{
+    font-size: 45px;
+  }
+
+  .hero-delta p{
+    font-size: 18px;
+  }
+
+  .about-section{
+    padding: 40px;
+    margin: 80px 20px;
+  }
+
+  .wildlife-card,
+  .flora-card{
+    flex: 0 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px){
+
+  /* NAVBAR */
+
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar a{
+    font-size: 13px;
+  }
+
+
+  /* HERO */
+
+  .hero-home,
+  .hero-delta{
+    height: auto;
+    padding: 100px 20px;
+  }
+
+  .hero-delta h2{
+    font-size: 34px;
+  }
+
+  .hero-delta p{
+    font-size: 16px;
+  }
+
+
+  /* WHOLE TEXT */
+
+  .section-title{
+    font-size: 1.8rem;
+  }
+
+  .content{
+    padding: 0 20px;
+    font-size: 16px;
+  }
+
+  .story{
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .about-section{
+    padding: 30px 20px;
+    margin: 60px 15px;
+  }
+
+  .about-section h2{
+    font-size: 2rem;
+  }
+
+  .about-section p{
+    font-size: 1rem;
+  }
+
+
+  /* CAROUSEL */
+
+  .carousel-item{
+    width: 200px;
+    height: 280px;
+  }
+
+
+  /* WILDLIFE + FLORA */
+
+  .wildlife-card,
+  .flora-card{
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+
+
+  /* DELTA ACTIVITIES */
+
+  .activities-header h2{
+    font-size: 30px;
+  }
+
+  .activities-header p{
+    font-size: 15px;
+  }
+
+  .delta-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .activity-box img{
+    height: 220px;
+  }
+
+
+  /* FOOTER */
+
+  .footer-links,
+  .footer-external{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+
+/* =====
+   SMALL PHONE RESPONSIVE
+====== */
+
+@media (max-width: 480px){
+
+  .hero-delta h2{
+    font-size: 28px;
+  }
+
+  .hero-delta p{
+    font-size: 15px;
+  }
+
+  .section-title{
+    font-size: 1.5rem;
+  }
+
+  .bold-text{
+    font-size: 1.1rem;
+    margin: 30px 15px;
+  }
+
+  .carousel-item{
+    width: 170px;
+    height: 240px;
+  }
+
+}
