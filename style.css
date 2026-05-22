@@ -565,6 +565,7 @@ body{
 
 .featured-camps{
   background: linear-gradient(to bottom, #08121f, #10243b);
+  padding-bottom: 80px;
 }
 
 .card img{
