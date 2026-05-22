@@ -673,6 +673,7 @@ body{
   /* NAVBAR */
 
     .navbar{
+      display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
@@ -681,6 +682,8 @@ body{
 
   .navbar a{
     font-size: 13px;
+    padding: 6px 10px;
+     
   }
 
 
@@ -771,6 +774,7 @@ body{
 
   .footer-links,
 .footer-external{
+  display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
