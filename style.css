@@ -318,6 +318,7 @@ body{
 
 }
 
+/* SAFARIS-link SECTION */
 .more-info-safaris {
 
  color: #A77E55;
@@ -332,6 +333,8 @@ body{
   color: #70401B;
   border-bottom: 2px solid #70401B;
 }
+
+/* WILDLIFE SECTION */
 
 .wildlife-section {
   display: flex;
@@ -391,6 +394,8 @@ body{
   color: #70401B;
   border-bottom: 2px solid #70401B;
 }
+
+/* FLORA SECTION */
 
 .flora-section{
   display: flex;
@@ -562,6 +567,7 @@ body{
   background: #e0b14a;
 }
 
+/*Featured Camps Section*/
 
 .featured-camps{
   background: linear-gradient(to bottom, #08121f, #10243b);
@@ -580,6 +586,8 @@ body{
 .card:hover{
   transform: translateY(-10px);
 }
+
+/* FOOTER */
 
 .footer {
   margin-top: 50px;
